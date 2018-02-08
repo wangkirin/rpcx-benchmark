@@ -1,0 +1,29 @@
+---
+cse:
+  service:
+    registry:
+      type: File
+  protocols:
+    highway:
+      listenAddress: 127.0.0.1:5000
+      advertiseAddress: 127.0.0.1:5000
+  flowcontrol:
+    Provider:
+      qps:
+        enabled: false
+  flowcontrol:
+    Provider:
+      qps:
+        enabled: false
+    Provider:
+      timeout:
+        enabled: false
+  circuitBreaker:
+    Provider:
+      enabled: false
+  fallback:
+    Provider:
+      enabled: false
+  fallbackpolicy:
+    Provider:
+      policy: throwexception

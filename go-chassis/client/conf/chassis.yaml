@@ -1,0 +1,21 @@
+---
+cse:
+  service:
+    registry:
+      type: File
+  flowcontrol:
+    Consumer:
+      qps:
+        enabled: false
+    Consumer:
+      timeout:
+        enabled: false
+  circuitBreaker:
+    Consumer:
+      enabled: false
+  fallback:
+    Consumer:
+      enabled: false
+  fallbackpolicy:
+    Consumer:
+      policy: throwexception
